@@ -1,0 +1,621 @@
+body {
+	
+	color:#4c004a;
+	/*font-family: "Tw Cen MT";*/
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	font-variant:small caps;
+	font-family:"Palatino Linotype";
+}
+h3
+{
+
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+font-weight: bold;
+font-size:16px;
+display:inline;
+}
+#container {
+	position:relative;
+	width:960px;
+	height:800px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	z-index:1;
+	
+}
+ul{
+list-style-type:none;
+}
+ul.hot_links {
+	width:120px;
+	text-align:center;
+	cursor:pointer;
+	/*margin:0;*/
+	font-family: Goudy Old Style;
+	z-index:999;
+}
+
+li.hot_links{
+	
+	background-image:url('./images/button_green.png');
+	background-repeat:no-repeat;
+	margin-left:-30px;
+	margin-top:12px;
+	color:#fff;
+	height:21px;
+	width:121px;
+	font-weight:bold;
+	text-shadow:#CCC 10px;
+	padding:top;
+	z-index:999;
+}
+#header{
+    position:absolute;
+	top:0px;
+	width:100%;
+	height:70px;
+}
+#logo{
+    position:absolute;
+	top:20px;
+	left:40px;	
+	width:200px;
+	height:60px;
+	background-image:url('./images/server++.png');
+	text-indent:-9999;
+	z-index:3;
+	background-repeat:no-repeat;
+}
+#image_logo{
+	position:absolute;
+	top:10px;
+	left:210px;
+	width:100px;
+	height:60px;
+	background-image:url('./images/logo.png');
+	background-repeat:no-repeat;
+	background-position:top center;
+	}
+
+#sub_header{  
+    position:absolute;
+    top:10px;
+	right:0px;
+    width:520px;
+   	height:25px;
+	text-align:center;
+	z-index:3;
+}	
+#welcome_message{
+    position:absolute;
+	left:350px;
+	width:120px;
+	z-index:3;
+}
+#login_info{
+   position:absolute;
+	left:500px;
+	width:120px;
+	z-index:3;
+}	
+#warnings{
+    position:absolute;
+	right:0px;
+	width:360px;
+	z-index:3;
+}
+#menu_container{
+   	position:absolute;
+    right:0px;	
+	width:100%;
+	height:70px;
+	background-image:url('./images/top_menu.png');
+	background-repeat:no-repeat;
+	z-index:3;
+}
+ul.menu_links {
+	position:absolute;
+	top:25px;
+	left:400px;
+	color:#000000;
+	list-style-position: outside;
+	margin: 0px;
+	overflow: hidden;
+	width: 450px;
+	height: 27px;
+	text-align:center;
+	font-family: Trajan Pro;
+	font-size:12px;
+}
+a {
+text-decoration:none;
+}
+.menu_links {
+	color:#4c004a;
+}
+li.menu_links {
+	display: block;
+	height:21px;
+	float: left;
+	background: url('./images/button_fafafa.png') no-repeat 100% 2%;
+	line-height: 27px;
+	padding:1px;
+	text-decoration: none;
+	margin-left:20px;
+	width:90px;
+}
+
+#outerBody_containerTop
+{
+	position:absolute;
+	top:80px;
+	width:960px;
+	height:9px;
+	background-image:url('./images/outerbody_top.png');
+	background-repeat:no-repeat;
+	z-index:2;
+	overflow:visible;
+	
+
+}	
+#outerBody_containerMiddle
+{
+	position:absolute;
+	top:89px;
+	width:960px;
+	height:665px;
+	background:#f2f2f2;
+	z-index:2;
+	overflow:visible;
+}
+
+#outerBody_containerBottom
+	{
+	position:absolute;
+	top:753px;
+	width:960px;
+	height:9px;
+	background-image:url('./images/outerbody_bottom.png');
+	background-repeat:no-repeat;
+	z-index:2;
+	overflow:visible;
+}
+
+#body_container{
+    position:absolute;
+	top:10px;
+	left:12px;
+	width:935px;
+	height:660px;
+	z-index:3;
+	background:#f6f6f2;
+}
+#server_basicInfo{
+    position:absolute;
+	top:0px;
+	right:0px;
+	width:400px;
+	height:60px;
+	z-index:3;
+	
+}
+#server_upTime{
+    position:absolute;
+	top:0px;
+    left:0px;
+    height:20px;
+	text-align:left;
+	
+}	
+#server_averageLoad{
+    position:absolute;
+	top:20px;
+	left:0px;
+    height:20px;
+	text-align:left;
+	}
+#averageLoad_content{
+    position:absolute;
+	top:20px;
+	right:0px;
+    height:20px;
+}	
+#server_restartTime{
+	position:absolute;
+	top:40px;
+	left:0px;
+	height:20px;
+	text-align:left;
+	}
+#restartTime_content{
+    position:absolute;
+	top:40px;
+	right:0px;
+    height:20px;
+}
+#all_graphs{
+    position:absolute;
+	top:90px;
+	left:10px;
+    width:600px;
+	height:500px;
+	z-index:3;	
+}
+.refresh {
+	display:block;
+	z-index:1000000;
+
+position:absolute;
+top:34px;
+left:121px;
+height:40px;
+width:260px;
+
+}
+#cpu_container{
+    position:absolute;
+	top:0px;
+    width:360px;
+    height:90px;
+}	
+#cpu_load{
+	position:absolute;
+	top:0px;
+	height:25px;
+	text-align:left;
+}	
+#chart_div{
+    position:absolute;
+	top:20px;
+	height:40px;
+	width:260px;
+}
+
+#cpuLoad_content{
+    position:absolute;
+	top:32px;
+	right:0px;
+	height:30px;
+	width:100px;
+}
+div#memory_container{
+	position:absolute;
+	top:90px;
+    width:360px;
+    height:90px;
+}	
+#memory_used{
+    position:absolute;
+	top:0px;
+    height:25px;
+	text-align:left;
+}
+#used_freeMemory{
+   	position:absolute;
+	top:20px;
+	right:0px;
+    width:100px;
+    height:30px;
+}  
+#memory_graph, #refresh_memoryGraph{
+    position:absolute;
+	top:20px;
+	height:40px;
+	width:260px;
+}
+#swap_container{
+    position:absolute;
+	top:180px;
+    width:360px;
+    height:90px; 
+}	
+#swap{
+    position:absolute;
+	top:0px;
+    height:25px;
+	text-align:left;
+}
+#used_freeSwap{
+    position:absolute;
+	top:32px;
+	right:0px;
+    width:100px;
+    height:30px;
+}
+#swap_graph, #refresh_swapGraph{
+    position:absolute;
+	top:32px;
+	width:260px;
+	height:40px;
+}
+#si_soDetails{
+    display:none;
+}
+#si_soSwap{
+    display:none;
+}
+#diskUsage_container {
+	position:absolute;
+	right:0px;
+	top:130px;
+	width:200px;
+	height:280px;
+	text-align:center;
+	z-index:100;
+	}
+div#disk_content {
+	position:absolute;
+	top:200px;
+	left:60px;
+	
+}
+#disk_usage{
+    position:absolute;
+	top:0px;
+	right:0px;
+	height:20px;
+	text-align:center;
+	width:200px;
+	z-index:5;
+}
+#disk_usageGraph{
+    position:absolute;
+	top:100x;
+	height:200px;
+	width:200px;
+}
+#refresh_diskUsageGraph {
+	position:absolute;
+	top:200x;
+	height:200px;
+	width:200px;
+}
+#upper_colourBox{
+    position:absolute;
+	top:110px;
+	right:500px;
+	height:60px;
+	width:5px;
+	background-image:url('./images/purple_image.png');
+	background-repeat:no-repeat;
+}	
+#cpu_configuration{
+    position:absolute;
+	top:85px;
+    left:440px;
+	height:80px;
+	text-align:left;
+	
+}
+
+#links_container{
+    position:absolute;
+	top:100px;
+	right:20px;
+	height:465px;
+	color:#FFFFFF;
+	width:142px;
+	background-image:url('./images/links_background.png');
+	z-index:999;
+	background-repeat:no-repeat;
+}
+#links_container a{
+	color:#ffffff;
+}
+#ssh_container {
+	position:absolute;
+	bottom:100px;
+	display:none;
+	left:5px;
+	width:600px;
+	overflow:hidden;
+}
+div.ssh_loginHistory {
+	position:absolute;
+	top:5px;
+	right:5px;
+	width:120px;
+	background-image:url('./images/buttonw.png');
+	background-repeat:no-repeat;
+	text-align:center;
+	z-index:3;
+}
+#service_status
+{
+	position:absolute;
+	bottom:110px;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+}
+table.servicestatus{
+	border-color:#800080;
+	border-width:2px;
+	border-style:solid;
+	width:780px;
+	padding:1;
+	border-collapse:collapse;
+	border:#800080;
+	text-align:left;
+	background-color:white;
+}
+table.display{
+	font-weight:bolder;
+	font-variant:small caps;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#lowerLeft_colourBox{
+    position:absolute;
+	bottom:40px;
+	left:400px;	
+	height:60px;
+	width:5px;
+	background-image:url('./images/purple_image.png');
+}
+
+#server_osDetails{
+    position:absolute;
+	bottom:20px;
+	right:0px;
+	text-align:left;
+}
+#server_version
+{
+	position:absolute;
+	bottom:20px;
+	left:0px;
+	text-align:left;
+	
+}
+
+div#host_name{
+	position:absolute;
+    bottom:5px;
+	left:10px;
+   	z-index:3;
+	
+}
+div#node_name{
+	position:absolute;
+    bottom:5px;
+	right:0px;
+   	z-index:3;
+	
+}	
+div#dynamic_div{
+    position:absolute;
+	top:0px;
+	left:0px;
+	width:0%;
+	height:100px;
+	margin:5px 5px 5px 5px;
+	padding:2px 2px 2px 2px;
+	display:none;
+	text-align:center;
+	z-index:100;
+	color:#FFFFFF;
+}
+
+div#dynamic_heading {
+	position:absolute;
+	top:0px;
+	left:5%;
+	width:600px;
+	height:55px;
+	padding-top:0.7em;
+	text-align:center;
+	color:#000000;
+	background:url('./images/dynamic_heading.png') no-repeat 100% 0%;
+	z-index:101;
+	
+
+}
+#dynamic_content {
+	position:absolute;
+	top:60px;
+	width:800px;
+	color:#000000;
+	height:auto;
+	overflow:hidden;
+	z-index:999;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	white-space: normal;
+	/*word-space:normal;*/ 
+	background:url('./images/dynamic_content1.png') repeat-y;
+}
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+/*dynamic_contentTop {
+	position:absolute;
+	top:0px;
+	width:792px;
+	height:20px;
+	background:url('./images/dynamic_contentTop.png') repeat-y;
+}*/
+#dynamic_contentBottom {
+	position:absolute;
+	bottom:0px;
+	width:792px;
+	height:23px;
+	background:url('./images/dynamic_contentBottom.png');
+	background-repeat:no-repeat;
+}
+#dynamic_seeMore {
+	position:absolute;
+	bottom:5px;
+	left:20px;
+	width:20px;
+	height:20px;
+	padding:.2em .2em .2em .2em;
+	z-index:405;
+	color:#000000;
+	text-align:left;
+	text-indent:-9999;
+	background-image:url('./images/seemore1.png');
+	background-repeat:no-repeat;
+	cursor:pointer;
+
+	}
+.wrapper {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+img.close_process {
+	position:absolute;
+	top:15px;
+	right:-120px;
+	cursor:pointer;
+		
+}
+
+#heading{
+    padding: 0px 0px 0px 0px;
+    font-weight: 500;
+    font-size:20px;
+    display:inline;
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.message{
+	color:#4f9f2c;   //#e9bf02;
+	font-weight:bold;
+	font-size:24px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	z-index:5;
+}
+
+.error{
+	font-size:20px;
+	/*margin-left:360px;*/
+	color:#d93205;
+	font-weight:500;
+	font-family:Verdana, Geneva, sans-serif;   //"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	z-index:4;
+}
+#quote
+{
+	font-size:40px;
+	margin-left:400px;
+	text-align:right;
+	
+}
+#button_quote
+{
+	margin-top:-21px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:300;
+}
